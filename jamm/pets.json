@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "type": "Fish",
+        "image": "./public/images/petpics/fish.png",
+        "description": "This little fish is easy to take care of and doesn't need much food or attention.",
+        "worth": 100
+    },
+    {
+        "id": 2, 
+        "type": "Hamster", 
+        "image": "./public/images/petpics/hamster.png",
+        "description": "A hamster is a cute pet who likes a lot of playtime.",
+        "worth": 200
+    },
+    {
+        "id": 3,
+        "type": "Snake",
+        "image": "./public/images/petpics/snake.png",
+        "description": "A snake does not like attention but it needs a lot of food.",
+        "worth": 300
+    }
+]
