@@ -1,11 +1,11 @@
-var http = require("http");
-var PORT = 3000;
+const http = require("http");
+const PORT = 3000;
 
 function handleRequest(request, response) {
   response.end("It works! " + request.url);
 }
 
-var server = http.createServer(handleRequest);
+const server = http.createServer(handleRequest);
 
 server.listen(PORT, function() {
 
