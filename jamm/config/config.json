@@ -2,7 +2,7 @@
     "development": {
       "username": "root",
       "password": "m7i8k8e3",
-      "database": "todolist",
+      "database": "learner_db",
       "host": "localhost",
       "port": 3306,
       "dialect": "mysql"
