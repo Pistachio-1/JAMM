@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route } from 'react-router-dom';
-import OurMission from './components/OurMission';
-import About from './components/About';
-import Navbar from './components/PetNavbar';
-import Doggy from './components/doggy';
-import buyPetsCard from './components/buypetscard';
+import OurMission from './pages/Mission';
+import About from './pages/About';
+import Navbar from './components/Navbar/PetNavbar';
+import Doggy from './components/Doggy';
+import AdditionGame from "./pages/AdditionGame"
 import pets from "./pets.json"
+import buyPetsCard from "./pages/buypets"
 
 
 
