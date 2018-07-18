@@ -1,0 +1,11 @@
+nav.navbar, .navbar-default {
+    background-color: #41EAD4 !important;
+}
+.navbar-default {
+    background-image:none;
+    border:none;
+    border-radius:0;
+}
+.navbar-default .navbar-brand {
+    color:white;
+}
