@@ -1,0 +1,55 @@
+.game {
+  display: inline-flex; 
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+  padding: 20px;
+  border: 1px solid red;
+}
+.target {
+  border: thin solid #999; 
+  width: 40%; 
+  height: 75px;
+  font-size: 45px; 
+  text-align: center; 
+  display: inline-block;
+  background-color: #ccc;
+  /* border: 3px purple solid; */
+}
+.challenge-numbers {
+  width: 85%; 
+  margin: auto;
+  text-align: center;
+  /* border: 1px blue solid; */
+  padding: 10px
+}
+.number {
+  border: thin solid lightgray; 
+  background-color: #eee;
+  width: 40%; 
+  text-align: center; 
+  font-size: 36px;
+  border-radius: 5px; 
+  margin: auto;
+  display: inline-block;
+  /* border: 1px green solid; */
+}
+.footer {
+  display: flex; 
+  width: 90%; 
+  justify-content: space-between;  
+}
+.gamebutton {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  height: 35px;
+  background-color: rgb(65, 144, 234);
+}
+
+.timer-value { 
+  color: darkgreen; 
+  font-size: 20px; 
+  /* border: 3px pink solid; */
+}
+

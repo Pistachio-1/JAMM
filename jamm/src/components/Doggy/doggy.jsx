@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import './doggy.scss'
 
 export default class Doggy extends Component {
