@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import './buypetscard.css';
+import './Buypetscard.css';
 
 
-export default class buyPetsCard extends Component {
-  render(props) {
+export default class Buypetscard extends Component {
+  render() {
     return (
       <div>
         <div className="card">
@@ -13,10 +13,10 @@ export default class buyPetsCard extends Component {
             <div className="content">
             <ul>
               <li>
-                <strong>Type of Pet:</strong> DOG
+                <strong>Type of Pet:</strong> dog
         </li>
               <li>
-                <strong>Description:</strong> Good Dog
+                <strong>Description:</strong> good dog
         </li>
               <button type="button" class="btn btn-info" value="50">Buy Pet for 50</button>
 

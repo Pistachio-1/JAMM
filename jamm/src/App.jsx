@@ -6,13 +6,9 @@ import Navbar from './components/Navbar';
 import Login from "./components/Login"
 import About from './pages/About';
 import AdditionGame from "./pages/AdditionGame"
-<<<<<<< HEAD
 import pets from "./pets.json"
-import buyPetsCard from "./pages/buypets"
-
-=======
+import BuyPetsView from "./components/views/buycard"
 import Home from "./pages/Home"
->>>>>>> origin/master
 
 
 
@@ -25,13 +21,10 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/doggy" component={Doggy} />
-<<<<<<< HEAD
         <Route path="/additiongame" component={AdditionGame} />
-        <Route path="/buypet" component={buyPetsCard} />
-=======
+        <Route path="/buypet" component={BuyPetsView} />
         <Route path="/login" component={Login} />
         <Route path="/home"  component={Home} />
->>>>>>> origin/master
       </div> 
     </Router>
     );
