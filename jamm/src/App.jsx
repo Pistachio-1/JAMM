@@ -6,6 +6,7 @@ import About from './pages/About';
 import Navbar from './components/Navbar/PetNavbar';
 import Doggy from './components/Doggy';
 import AdditionGame from "./pages/AdditionGame"
+import Home from "./pages/Home"
 
 
 
@@ -15,7 +16,7 @@ class App extends Component {
      <Router>
       <div>
         <Navbar />
-        <Route exact path="/" component={OurMission} />
+        <Route exact path="/" component={Home} />
         <Route path="/ourmission" component={OurMission} />
         <Route path="/about" component={About} />
         <Route path="/additiongame" component= {AdditionGame}/>
