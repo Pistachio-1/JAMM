@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button } from "react-bootstrap";
-import "./OurMission.css"
+import "./doggy.css"
 
 export default class OurMission extends Component {
     render() {
