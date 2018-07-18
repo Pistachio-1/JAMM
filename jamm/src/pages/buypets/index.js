@@ -1,1 +1,1 @@
-export { default } from "./buy_pets_card";
+export { default } from "./buypetscard";

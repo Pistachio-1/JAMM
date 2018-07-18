@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './buypetscard.css';
-import pets from './pets.json';
+
 
 export default class buyPetsCard extends Component {
   render(props) {
@@ -13,7 +13,7 @@ export default class buyPetsCard extends Component {
             <div className="content">
             <ul>
               <li>
-                <strong>Type of Pet:</strong> {props.type}
+                <strong>Type of Pet:</strong> DOG
         </li>
               <li>
                 <strong>Description:</strong> Good Dog

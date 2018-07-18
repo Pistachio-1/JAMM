@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Navbar,Nav,NavItem } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import './doggy.css'
+import './PetNavbar.css'
 
 export default class PetNavbar extends Component {
     render() {
