@@ -4,41 +4,33 @@ import './doggy.scss'
 export default class Doggy extends Component {
     render() {
         return (
-            <div>
-                <div class="dog">
-                    <div class="dog-body">
-                        <div class="dog-tail">
-                        <div class="dog-tail">
-                            <div class="dog-tail">
-                            <div class="dog-tail">
-                                <div class="dog-tail">
-                                <div class="dog-tail">
-                                    <div class="dog-tail">
-                                    <div class="dog-tail"></div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="dog-torso"></div>
-                    <div class="dog-head">
-                        <div class="dog-ears">
-                        <div class="dog-ear"></div>
-                        <div class="dog-ear"></div>
-                        </div>
-                        <div class="dog-eyes">
-                        <div class="dog-eye"></div>
-                        <div class="dog-eye"></div>
-                        </div>
-                        <div class="dog-muzzle">
-                        <div class="dog-tongue"></div>
-                        </div>
+            <div class="dog">
+                <div class="ears"></div>
+                
+                <div class="body">
+                    <div class="eyes"></div>
+                    <div class="beard">
+                    <div class="mouth">
+                        <div class="tongue"></div>
                     </div>
                     </div>
-                    <div class="ball" tabindex="0"></div>
+                    <div class="belt">
+                    <div class="locket"></div>
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot4"></div>
+                    <div class="tag"></div>
+                    </div>
+                    <div class="stomach">
+                    </div>
+                    <div class="legs">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    </div>
+                </div>
+                <div class="tail">
+                </div>
             </div>
         )
     }
