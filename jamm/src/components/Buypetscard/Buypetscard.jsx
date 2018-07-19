@@ -13,10 +13,10 @@ export default class Buypetscard extends Component {
             <div className="content">
             <ul>
               <li>
-                <strong>Type of Pet:</strong> dog
+                <strong>Type of Pet:</strong> {this.props.data.type}
         </li>
               <li>
-                <strong>Description:</strong> good dog
+                <strong>Description:</strong> {this.props.data.description}
         </li>
               <button type="button" class="btn btn-info" value="50">Buy Pet for 50</button>
 
