@@ -9,7 +9,7 @@ export default class PetNavbar extends Component {
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">Math with Pets</Link>
+                        <Link to="/"><i class="fas fa-paw"></i> Math with Pets</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -17,9 +17,6 @@ export default class PetNavbar extends Component {
                     <Nav pullRight>
                         <NavItem eventKey={1} componentClass={Link} href="/" to="/Home">
                         Home
-                        </NavItem>
-                        <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-                        OurMission
                         </NavItem>
                         <NavItem eventKey={2} componentClass={Link} href="/" to="/About">
                         About
