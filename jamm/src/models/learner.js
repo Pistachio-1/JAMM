@@ -1,8 +1,13 @@
+// * import static Sequelize for data types.
 const Sequelize = require("sequelize");
-const database = require("../../config/connection.js");
+// * import the constructed database with all the connection info etc.
+const database = require("./index.js");
+// * inside the database is the sequelize function to manipulate models
+const sequelize = database.sequelize;
 
+// * the primary key (id) is implied (auto-increment)
 const Learner = (sequelize, DataTypes) => {
-    var Learner = database.define("learner", {
+    var Learner = sequelize.define("learner", {
         firstName: Sequelize.STRING,
         lastName: Sequelize.STRING,
         email: Sequelize.STRING,

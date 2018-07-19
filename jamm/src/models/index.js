@@ -9,8 +9,6 @@ var config = require(__dirname + "/../../config/config.json")[env];
 var jawsdb = require(__dirname + "/../../config/jawsdb.json");
 var db = {};
 
-console.log(config);
-
 if (process.env.JAWSDB_URL) {
   console.log('using jawscb config');
   var sequelize = new Sequelize(jawsdb.database, jawsdb.username, jawsdb.password, jawsdb);
