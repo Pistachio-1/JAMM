@@ -26,6 +26,7 @@ const BuyPetsView = () => (
         <div className="col-md-4"></div>
         <div className="col-md-4">
         <h1 style={titleStyle}> Coins: </h1>
+        <a href="/AdditionGame"> Make more coins!</a>
         </div>
         <div className="container scroll">
         {Pets.map(x => {
