@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import Login from "./components/Login"
 import About from './pages/About';
 import AdditionGame from "./pages/AdditionGame"
-import pets from "./pets.json"
 import BuyPetsView from "./components/views/buycard"
 import Home from "./pages/Home"
 

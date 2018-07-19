@@ -8,7 +8,7 @@ export default class Buypetscard extends Component {
       <div class="buyCards">
         <div className="card">
           <div className="img-container">
-            <img src={this.props.data.image} />
+            <img src={this.props.data.image} alt="pet" />
           </div>
           <div className="content">
             <ul>
