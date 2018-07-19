@@ -1,17 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Buypetscard from "../Buypetscard";
 import Pets from "../../pets.json";
 import "./buycard.css"
-
-var divStyle = {
-    color: "white",
-    width: 600
-}
-
-var containerStyle = {
-    display: "inline-flex",
-    overflow: "scroll",
-}
 
 var titleStyle = {
     color: "white",
