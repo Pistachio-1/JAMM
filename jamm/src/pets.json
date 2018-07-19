@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "type": "Fish",
+        "image": "https://image.ibb.co/mM2Kdd/fish.png",
+        "description": "This little fish is easy to take care of and doesn't need much.",
+        "worth": 100
+    },
+    {
+        "id": 2, 
+        "type": "Hamster", 
+        "image": "https://image.ibb.co/fPChWy/hamster.png",
+        "description": "A hamster is a cute pet who likes a lot of playtime.",
+        "worth": 200
+    },
+    {
+        "id": 3,
+        "type": "Snake",
+        "image": "https://image.ibb.co/gb0VJd/snake.png",
+        "description": "A snake does not like attention but it needs a lot of food.",
+        "worth": 300
+    },
+    {
+        "id": 4,
+        "type": "Cat",
+        "image": "https://image.ibb.co/fLLuTd/cat.png",
+        "description": "This cat only wants attention when you're busy.",
+        "worth": 400
+    },
+    {
+        "id": 5,
+        "type": "Dog",
+        "image": "https://image.ibb.co/cejfjJ/dog.png",
+        "description": "The dog is always hungry and needs lots of love.",
+        "worth": 500
+    },
+    {
+        "id": 6,
+        "type": "Cat",
+        "image": "https://image.ibb.co/ig6FJd/cat_1.png",
+        "description": "If you're looking for a cat who loves to play, this is the one!",
+        "worth": 600
+    },
+    {
+        "id": 7,
+        "type": "Dog",
+        "image": "https://image.ibb.co/k8Q9dd/dog_1.png",
+        "description": "This dog will follow you until you love it.",
+        "worth": 700
+    },
+    {
+        "id": 8,
+        "type": "Super Kitty",
+        "image": "https://image.ibb.co/j8FxWy/kitty.png",
+        "description": "This cat wants attention but can feed itself. Super!",
+        "worth": 1000
+    },
+    {
+        "id": 9,
+        "type": "Monkey",
+        "image": "https://image.ibb.co/fkmkjJ/monkey.png",
+        "description": "This funky monkey loves to play and loves to eat.",
+        "worth": 5000
+    }
+]
