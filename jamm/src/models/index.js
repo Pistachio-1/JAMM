@@ -1,3 +1,3 @@
 module.exports = {
-    Learner: require("./learner")
+    Learner: require("./Learner")
 };

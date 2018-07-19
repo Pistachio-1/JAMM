@@ -7,13 +7,14 @@ USE login_db;
 CREATE TABLE learner (
     firstName       VARCHAR(50) NOT NULL,
     lastName        VARCHAR (50) NOT NULL,
-    age             INTEGER DEFAULT 0,
+    email           VARCHAR(100) NOT NULL,
+    coins           INTEGER DEFAULT 0,
     favoritePet     VARCHAR(50) NOT NULL,
     createdAt       TIMESTAMP DEFAULT NOW(),
     updatedAt       TIMESTAMP DEFAULT NOW(),
 );
 
-INSERT INTO learner (firstName,lastName,age,favoritePet)
-VALUES ("tets","test",20,"cat")
+INSERT INTO learner (firstName,lastName,email,coins,favoritePet)
+VALUES ("tests","test","me@pets.com",20,"cat")
 
 

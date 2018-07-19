@@ -5,7 +5,8 @@ const Learner = (sequelize, DataTypes) => {
     var Learner = database.define("learner", {
         firstName: Sequelize.STRING,
         lastName: Sequelize.STRING,
-        age: Sequelize.INTEGER,
+        email: Sequelize.STRING,
+        coins: Sequelize.INTEGER,
         favoritePet: Sequelize.STRING,
         createdAt: Sequelize.DATE,
         updatedAt: Sequelize.DATE
@@ -13,4 +14,4 @@ const Learner = (sequelize, DataTypes) => {
 
     return Learner;
 };
-module.exports=Learner;
+module.exports = Learner;
