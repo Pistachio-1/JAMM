@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Grid, Row, Col } from 'react-bootstrap';
 import Register from "./../../components/RegisterForm"
+import Resources from "./../../components/Resources"
 import Whitedog from "./../../components/WhiteDog"
 import AdditionGame from "../../pages/AdditionGame"
 // import Corgi from "./../../components/Corgi"
 // import Doggy from "./../../components/Doggy"
 import './Home.css'
 const GamePic = require("../../components/images/gamepic.png")
-const Placeholder=require("../../components/images/200")
+const Placeholder=require("../../components/images/200.png")
 const Gif=require("../../components/images/education.gif")
 
 
@@ -46,16 +47,14 @@ export default class Home extends Component {
                 <Row className = "gamesection">
                     <h2> Games: </h2>
                     <div className="addgame">
-                        <a href="/additiongame" onClick={AdditionGame}> <img src={GamePic} style={{width: 200, height: 200}} alt="additiongame"/> </a>
-                        <img src={Placeholder} style={{width: 200, height: 200}} alt="placeholder"/>
-                        <img src={Placeholder} style={{width: 200, height: 200}} alt="placeholder"/>
-                        <img src={Placeholder} style={{width: 200, height: 200}} alt="placeholder"/>
+                        <a href="/additiongame" onClick={AdditionGame}> <img src={GamePic} style={{width: 300, height: 200}} alt="additiongame"/> </a>
+                        <img src={Placeholder} alt="placeholder"/>
+                        <img src={Placeholder} alt="placeholder"/>
+                        <img src={Placeholder} alt="placeholder"/>
 
                     </div>
                 </Row>
-                <Row>
-                    Resources:
-                </Row>
+                <Resources/>
             </Grid>
         )
     }

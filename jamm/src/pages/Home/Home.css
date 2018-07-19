@@ -15,12 +15,13 @@
 .gamesection{
     background-color: #F4AFB4;
     font-family: 'Arvo', serif;
+    padding: 30px;;
 }
-.gamesection > h2 {
+/* .gamesection > h2 {
     margin: 20px;
-}
+} */
 .addgame{
-    display: flex;
+    flex: wrap;
     margin-left: 10vh;
     margin-bottom: 15px;
 
@@ -30,7 +31,5 @@ img {
     padding: 10px;
     border-radius: 15px;
 }
-.missionText{
-    border:1px red solid;
-}
+
 
