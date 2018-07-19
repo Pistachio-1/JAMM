@@ -27,7 +27,10 @@ export default class PetNavbar extends Component {
                         <NavItem eventKey={4} componentClass={Link} href="/" to="/Doggy">
                         Doggy
                         </NavItem>
-                        <NavItem eventKey={4} componentClass={Link} href="/" to="/Login">
+                        <NavItem eventKey={5} componentClass={Link} href="/" to="/buypet">
+                        Buy Pets
+                        </NavItem>
+                        <NavItem eventKey={6} componentClass={Link} href="/" to="/Login">
                         Login
                         </NavItem>
                     </Nav>
@@ -36,4 +39,6 @@ export default class PetNavbar extends Component {
         )
     }
 }
+
+
 
