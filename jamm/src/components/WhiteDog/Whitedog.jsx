@@ -4,16 +4,17 @@ import "./Whitedog.scss"
 export default class Whitedog extends Component {
     render() {
         return (
-                <div className="dog">
-                    <div className="dog-body">
-                        <div className="dog-tail">
-                            <div className="dog-tail">
-                                <div className="dog-tail">
-                                    <div className="dog-tail">
-                                        <div className="dog-tail">
-                                            <div className="dog-tail">
-                                                <div className="dog-tail">
-                                                    <div className="dog-tail"></div>
+            <div className = "whitedoggo">
+                <div className="whitedog">
+                    <div className="whitedog-body">
+                        <div className="whitedog-tail">
+                            <div className="whitedog-tail">
+                                <div className="whitedog-tail">
+                                    <div className="whitedog-tail">
+                                        <div className="whitedog-tail">
+                                            <div className="whitedog-tail">
+                                                <div className="whitedog-tail">
+                                                    <div className="whitedog-tail"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -22,23 +23,24 @@ export default class Whitedog extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="dog-torso"></div>
-                    <div className="dog-head">
-                        <div className="dog-ears">
-                            <div className="dog-ear"></div>
-                            <div className="dog-ear"></div>
+                    <div className="whitedog-torso"></div>
+                    <div className="whitedog-head">
+                        <div className="whitedog-ears">
+                            <div className="whitedog-ear"></div>
+                            <div className="whitedog-ear"></div>
                         </div>
-                        <div className="dog-eyes">
-                            <div className="dog-eye"></div>
-                            <div className="dog-eye"></div>
+                        <div className="whitedog-eyes">
+                            <div className="whitedog-eye"></div>
+                            <div className="whitedog-eye"></div>
                         </div>
-                        <div className="dog-muzzle">
-                            <div className="dog-tongue"></div>
+                        <div className="whitedog-muzzle">
+                            <div className="whitedog-tongue"></div>
                         </div>
                     </div>
                 </div>
 
-                // {/* <div className="ball" tabindex="0"></div> */}
+            <div className="whiteball" tabindex="0"></div> 
+        </div>
         )
     }
 }

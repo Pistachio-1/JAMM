@@ -1,26 +1,38 @@
+.gamecontainer{
+  height: 600px;
+  width: 87%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: rgb(71, 132, 173);
+
+}
+.gamename{
+  padding: 10px;
+  margin: 15px;
+  color: white;
+  font-family: 'Arvo', serif;
+}
 .game {
   display: inline-flex; 
   flex-direction: column;
   align-items: center; 
   width: 100%;
   padding: 20px;
-  border: 1px solid red;
 }
 .target {
   border: thin solid #999; 
-  width: 40%; 
+  width: 50%; 
   height: 75px;
   font-size: 45px; 
   text-align: center; 
   display: inline-block;
-  background-color: #ccc;
-  /* border: 3px purple solid; */
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 .challenge-numbers {
-  width: 85%; 
+  width: 100%; 
   margin: auto;
   text-align: center;
-  /* border: 1px blue solid; */
   padding: 10px
 }
 .number {
@@ -32,7 +44,6 @@
   border-radius: 5px; 
   margin: auto;
   display: inline-block;
-  /* border: 1px green solid; */
 }
 .footer {
   display: flex; 
@@ -44,12 +55,12 @@
   text-align: center;
   margin: auto;
   height: 35px;
-  background-color: rgb(65, 144, 234);
+  border-radius: 15px;
+  background-color: #63D2FF;
 }
 
 .timer-value { 
-  color: darkgreen; 
-  font-size: 20px; 
-  /* border: 3px pink solid; */
+  color: rgb(44, 197, 44); 
+  font-size: 40px; 
 }
 
