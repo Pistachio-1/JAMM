@@ -28,12 +28,21 @@ export default class PetNavbar extends Component {
                         <NavItem eventKey={5} componentClass={Link} href="/" to="/Doggy">
                         Doggy
                         </NavItem>
-                       <Login/>
-
+                        <NavItem eventKey={5} componentClass={Link} href="/" to="/buypet">
+                        Buy Pets
+                        </NavItem>
+                        <NavItem>
+                        <Login/>
+                        </NavItem>
+                        
+                        
+                        
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
         )
     }
 }
+
+
 
