@@ -1,8 +1,6 @@
-const http = require("http");
-const PORT = 3001;
-
 const express = require("express");
 const app = express();
+const PORT = 3001;
 
 require("./routes/learner-routes")(app);
 
@@ -11,9 +9,10 @@ app.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 
-// const server = http.createServer(handleRequest);
+const db = require("./src/models");
 
-app.listen(PORT, function() {
-
-  console.log("Server listening on: http://localhost:" + PORT);
+db.sequelize.sync({ force: true }).then(function () {
+  app.listen(PORT, function () {
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
 });

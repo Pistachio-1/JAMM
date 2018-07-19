@@ -9,12 +9,17 @@ var config = require(__dirname + "/../../config/config.json")[env];
 var jawsdb = require(__dirname + "/../../config/jawsdb.json");
 var db = {};
 
+console.log(config);
+
 if (process.env.JAWSDB_URL) {
+  console.log('using jawscb config');
   var sequelize = new Sequelize(jawsdb.database, jawsdb.username, jawsdb.password, jawsdb);
 } else {
   if (config.use_env_variable) {
+    console.log('using env. config');
     var sequelize = new Sequelize(process.env[config.use_env_variable]);
   } else {
+    console.log('using default config');
     var sequelize = new Sequelize(config.database, config.username, config.password, config);
   }
 }
