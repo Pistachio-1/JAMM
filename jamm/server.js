@@ -1,13 +1,24 @@
-const http = require("http");
-const PORT = 3000;
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
+const PORT = 3001;
 
-function handleRequest(request, response) {
-  response.end("It works! " + request.url);
-}
+// * parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+// * parse application/json
+app.use(bodyParser.json());
 
-const server = http.createServer(handleRequest);
+require("./routes/learner-routes")(app);
 
-server.listen(PORT, function() {
+// * leave in to verify express is working
+app.get('/api/hello', (req, res) => {
+  res.send({ express: 'Hello From Express' });
+});
 
-  console.log("Server listening on: http://localhost:" + PORT);
+const db = require("./src/models");
+
+db.sequelize.sync({ force: true }).then(function () {
+  app.listen(PORT, function () {
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
 });
