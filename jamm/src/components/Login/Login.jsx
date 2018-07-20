@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import {NavItem, Modal,Button,Popover,Tooltip,OverlayTrigger} from 'react-bootstrap';
+import {NavItem, Modal,Button,Popover,Tooltip,OverlayTrigger,label,input} from 'react-bootstrap';
 import "./Login.css"
+// if I am importing a componenet I need to name the componenet and name where its coming from 
 
 
 export default class Login extends Component {
@@ -40,80 +41,10 @@ export default class Login extends Component {
     
             <Modal show={this.state.show} onHide={this.handleClose}>
               <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+                <Modal.Title>Login</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <h4>Text in a modal</h4>
-                <p>
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                </p>
-    
-                <h4>Popover in a modal</h4>
-                <p>
-                  there is a{' '}
-                  <OverlayTrigger overlay={popover}>
-                    <a href="#popover">popover</a>
-                  </OverlayTrigger>{' '}
-                  here
-                </p>
-    
-                <h4>Tooltips in a modal</h4>
-                <p>
-                  there is a{' '}
-                  <OverlayTrigger overlay={tooltip}>
-                    <a href="#tooltip">tooltip</a>
-                  </OverlayTrigger>{' '}
-                  here
-                </p>
-    
-                <hr />
-    
-                <h4>Overflowing text to show scroll behavior</h4>
-                <p>
-                  Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                  dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                  ac consectetur ac, vestibulum at eros.
-                </p>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                  et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                  auctor.
-                </p>
-                <p>
-                  Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                  cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                  dui. Donec ullamcorper nulla non metus auctor fringilla.
-                </p>
-                <p>
-                  Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                  dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                  ac consectetur ac, vestibulum at eros.
-                </p>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                  et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                  auctor.
-                </p>
-                <p>
-                  Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                  cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                  dui. Donec ullamcorper nulla non metus auctor fringilla.
-                </p>
-                <p>
-                  Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                  dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                  ac consectetur ac, vestibulum at eros.
-                </p>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                  et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                  auctor.
-                </p>
-                <p>
-                  Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                  cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                  dui. Donec ullamcorper nulla non metus auctor fringilla.
-                </p>
+                  <Modal />
               </Modal.Body>
               <Modal.Footer>
                 <Button onClick={this.handleClose}>Close</Button>
