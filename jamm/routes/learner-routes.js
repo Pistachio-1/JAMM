@@ -23,6 +23,18 @@ module.exports = function(app) {
         });
     });
 
+    app.get("/api/learners/username/:uname/:pswd", function(req, res) {
+        console.log(req.params);
+        db.learner.findOne({
+            where: {
+                userName: req.params.uname,
+                lastName: req.params.pswd
+            }
+        }).then(function(dbLearner) {
+            res.json(dbLearner)
+        });
+    });
+
     app.get("/api/learners", function(req, res) {
         db.learner.findAll({})
             .then(function(dbLearner) {
