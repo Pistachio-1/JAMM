@@ -1,22 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import Buypetscard from "../Buypetscard";
 import Pets from "../../pets.json";
 import "./buycard.css"
-
-var divStyle = {
-    color: "white",
-    width: 600
-}
-
-var containerStyle = {
-    display: "inline-flex",
-    overflow: "scroll",
-}
 
 var titleStyle = {
     color: "white",
     align: "center",
 }
+
+var linkStyle = {
+    color: "#F1AA45"
+}
+
 
 const BuyPetsView = () => (
         <div>
@@ -26,7 +21,7 @@ const BuyPetsView = () => (
         <div className="col-md-4"></div>
         <div className="col-md-4">
         <h1 style={titleStyle}> Coins: </h1>
-        <a href="/AdditionGame"> Make more coins!</a>
+        <a style={linkStyle} href="/AdditionGame"> Make more coins!</a>
         </div>
         <div className="container scroll">
         {Pets.map(x => {

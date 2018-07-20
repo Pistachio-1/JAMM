@@ -2,15 +2,14 @@
     background: #fff;
     border-radius: 2px;
     height: 500px;
-    margin-left: 1px;
     position: relative;
     width: 325px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     text-align: left;
     padding-bottom: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-top: 10px !important;
   }
 
   .buyCards {
