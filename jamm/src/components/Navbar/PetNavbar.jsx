@@ -30,7 +30,10 @@ export default class PetNavbar extends Component {
                         <NavItem eventKey={5} componentClass={Link} href="/" to="/buypet">
                         Buy Pets
                         </NavItem>
-                        <NavItem eventKey={6} componentClass={Link} href="/" to="/Login">
+                        <NavItem eventKey={6} componentClass={Link} href="/" to="/yourpets">
+                        Your Pets
+                        </NavItem>
+                        <NavItem eventKey={7} componentClass={Link} href="/" to="/Login">
                         Login
                         </NavItem>
                     </Nav>
