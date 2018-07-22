@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-// import { bounce } from 'react-animations';
+// import Animate from 'react-animate.css';
+import 'animate.css/animate.css';
 import { Grid, Row } from 'react-bootstrap';
 import "./Resources.css"
 import Bbc from "../images/bbc.png"
@@ -9,6 +10,13 @@ import Genius from "../images/genius.png"
 import National from "../images/national.png"
 import Time from "../images/time.png"
 
+    // <Animate
+    //     animationEnter="bounceIn"
+    //     animationLeave="bounceOut"
+    //     durationEnter={1000}
+    //     durationLeave={1000}
+    //     component="img" >
+    // </Animate>
 
 export default class Resources extends Component {
     render() {

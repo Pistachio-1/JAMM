@@ -1,4 +1,4 @@
-const db = require("../src/models");
+const db = require("./../models");
 
 module.exports = function(app) {    
     app.get("/api/learners/email/:email", function(req, res) {
@@ -64,7 +64,7 @@ module.exports = function(app) {
         });
     });
 
-    app.put("/api/learners", function(req, res) {
+    app.put("/api/learners/", function(req, res) {
         db.learner.update(req.body, {
             where: {
                 id: req.body.id
