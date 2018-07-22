@@ -17,7 +17,7 @@ app.get('/api/hello', (req, res) => {
 
 const db = require("./src/models");
 
-db.sequelize.sync({ force: false }).then(function () {
+db.sequelize.sync({ force: true }).then(function () {
   app.listen(PORT, function () {
     console.log("Server listening on: http://localhost:" + PORT);
   });
