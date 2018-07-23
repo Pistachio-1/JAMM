@@ -35,7 +35,7 @@ export default class Home extends Component {
                     <Grid>
                         <Row>
                             <Col md={7} className="missionText">
-                                <p>blahblah our mission blahblah</p>
+                                <p>Welcome</p>
                             </Col>
                             <Col md={5} className="missionPic">
                             <img className="gif" src={Gif}  alt="educationgif"/>

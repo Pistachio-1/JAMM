@@ -9,3 +9,7 @@
 .modal-title {
     text-align: center;
 }
+
+.btn {
+  border-radius: 12px;
+}

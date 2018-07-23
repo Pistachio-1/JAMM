@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import {NavItem, Modal,Button,Popover,Tooltip,OverlayTrigger,label,input} from 'react-bootstrap';
 import "./Login.css"
+import LoginForm from '../LoginForm/LoginForm'
 // if I am importing a componenet I need to name the componenet and name where its coming from 
 
 
@@ -35,7 +36,7 @@ export default class Login extends Component {
             <div>
             
     
-            <Button bsStyle="primary" bsSize="small" onClick={this.handleShow}>
+            <Button bsSize="sm" onClick={this.handleShow}>
              Login
             </Button>
     
@@ -44,7 +45,7 @@ export default class Login extends Component {
                 <Modal.Title>Login</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                  <Modal />
+                <LoginForm/>
               </Modal.Body>
               <Modal.Footer>
                 <Button onClick={this.handleClose}>Close</Button>

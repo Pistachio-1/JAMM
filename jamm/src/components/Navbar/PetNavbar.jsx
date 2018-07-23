@@ -19,24 +19,21 @@ export default class PetNavbar extends Component {
                         <NavItem eventKey={1} componentClass={Link} href="/" to="/Home">
                         Home
                         </NavItem>
-                        <NavItem eventKey={2} componentClass={Link} href="/" to="/About">
-                        About
-                        </NavItem>
-                        <NavItem eventKey={4} componentClass={Link} href="/" to="/Additiongame">
+                        <NavItem eventKey={2} componentClass={Link} href="/" to="/Additiongame">
                         Game
                         </NavItem>
-                        <NavItem eventKey={5} componentClass={Link} href="/" to="/Doggy">
+                        <NavItem eventKey={3} componentClass={Link} href="/" to="/Doggy">
                         Doggy
                         </NavItem>
-                        <NavItem eventKey={5} componentClass={Link} href="/" to="/buypet">
+                        <NavItem eventKey={4} componentClass={Link} href="/" to="/buypet">
                         Buy Pets
+                        </NavItem>
+                        <NavItem eventKey={5} componentClass={Link} href="/" to="/About">
+                        About
                         </NavItem>
                         <NavItem>
                         <Login/>
                         </NavItem>
-                        
-                        
-                        
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
