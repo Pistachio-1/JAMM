@@ -9,7 +9,7 @@ export default class PetNavbar extends Component {
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/"><i class="fas fa-paw"></i> Math with Pets</Link>
+                        <Link to="/"><i className="fas fa-paw"></i> Math with Pets</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

@@ -23,6 +23,7 @@
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "seed": "node_modules/.bin/sequelize db:seed --models-path src/models --seed seeders/learner.js",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js ",
     "build-js": "react-scripts build",
