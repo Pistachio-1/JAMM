@@ -12,16 +12,11 @@ class Login extends Component {
     // handle any changes to the input fields
     handleBlur = event => {
         // Pull the name and value properties off of the event.target (the element which triggered the event)
-        console.log(event.target);
         const name = event.target.name;
-        console.log(name);
         const value = event.target.value;
-        console.log(value);
-        // console.log({name : value});
         this.setState({
             [name]: value
         });
-        console.log(this.state);
     };
 
     handleFormSubmit = event => {
