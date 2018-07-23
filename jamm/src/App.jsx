@@ -8,6 +8,7 @@ import About from './pages/About';
 import AdditionGame from "./pages/AdditionGame"
 import BuyPetsView from "./components/views/buycard"
 import Home from "./pages/Home"
+import YourPetsView from "./components/views/yourpets"
 
 
 
@@ -24,6 +25,7 @@ class App extends Component {
         <Route path="/buypet" component={BuyPetsView} />
         <Route path="/login" component={Login} />
         <Route path="/home"  component={Home} />
+        <Route path="/yourpets"  component={YourPetsView} />
       </div> 
     </Router>
     );

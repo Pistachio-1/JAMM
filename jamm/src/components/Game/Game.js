@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from "lodash"
 import Number from "./Number"
 import './game.css';
-import './../../routes/learner-routes'
+const app = require('./../../routes/learner-routes') 
 
 
 const randomNumberBetween = (min, max) =>
@@ -34,7 +34,7 @@ class Game extends Component {
   componentDidMount() {
     if (this.props.autoPlay) {
       this.startGame();
-      this.addCoins();
+      // this.addCoins();
     }
   }
 
@@ -97,28 +97,28 @@ class Game extends Component {
     return sumSelected === this.target ? 'won' : 'lost';
   };
 
-  addCoins = () => {
-    let coins = this.state.coins
-    if ({ gameStatus: "won" }) {
-      this.setState({ coins: this.state.coins + 20 })
-      fetch("/api/learners/", {
-        method: "PUT",
-        data: coins,
-      }).then(function (response) {
-        if (response.status >= 400) {
-          throw new Error("Bad response from server");
-        }
-        return response.json();
-      }).then(function (data) {
-        console.log(data)
-        if (data == "success") {
-          console.log("SUCCESS")
-        }
-      }).catch(function (err) {
-        console.log(err)
-      });
-    }
-  }
+  // addCoins = () => {
+  //   let coins = this.state.coins
+  //   if ({ gameStatus: "won" }) {
+  //     this.setState({ coins: this.state.coins + 20 })
+  //     app.put("/api/learners/update", {
+  //       method: "PUT",
+  //       data: coins,
+  //     }).then(function (response) {
+  //       if (response.status >= 400) {
+  //         throw new Error("Bad response from server");
+  //       }
+  //       return response.json();
+  //     }).then(function (data) {
+  //       console.log(data)
+  //       if (data == "success") {
+  //         console.log("SUCCESS")
+  //       }
+  //     }).catch(function (err) {
+  //       console.log(err)
+  //     });
+  //   }
+  // }
 
 render() {
   const { gameStatus, remainingSeconds } = this.state;
