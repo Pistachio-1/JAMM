@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { Form, FormGroup, FormControl, Col, ControlLabel, Checkbox, Button, Grid, Row } from "react-bootstrap";
+import axios from "axios";
+
 import "./Login.css"
 
 class Login extends Component {
@@ -22,6 +24,15 @@ class Login extends Component {
     handleFormSubmit = event => {
         event.preventDefault();
         alert(`email: ${this.state.email}\nPassword: ${this.state.password}`);
+        //todo return the id of the username - this is temporary
+        axios({
+            method:'get',
+            url:'http://localhost:3001/api/learners/email/' + this.state.email,
+            responseType:'json'
+          })
+            .then(function(response) {
+                console.log(resp);
+          });
     };
 
     render() {
