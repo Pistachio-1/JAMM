@@ -1,7 +1,8 @@
 import React from "react";
 import Buypetscard from "../Buypetscard";
 import Pets from "../../pets.json";
-import "./buycard.css"
+import "./buycard.css";
+import axios from "axios";
 
 var titleStyle = {
     color: "white",
@@ -11,6 +12,14 @@ var titleStyle = {
 var linkStyle = {
     color: "#F1AA45"
 }
+
+{axios.get('/firstName=Allie')
+.then(function (response) {
+    console.log(response);
+})
+.catch(function(error) {
+    console.log(error);
+})}
 
 
 const BuyPetsView = () => (
