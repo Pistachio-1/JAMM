@@ -1,0 +1,35 @@
+.content {
+    background-color: #63D2FF;
+    padding: 15px;
+}
+.mission {
+    background-color: #ffffff;
+    padding: 15px;
+}
+.gif {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+
+}
+.gamesection{
+    background-color: #F4AFB4;
+    font-family: 'Arvo', serif;
+    padding: 30px;;
+}
+/* .gamesection > h2 {
+    margin: 20px;
+} */
+.addgame{
+    flex: wrap;
+    margin-left: 10vh;
+    margin-bottom: 15px;
+
+}
+img {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
