@@ -8,7 +8,9 @@ class Login extends Component {
 
     state = {
         email: "",
-        password: ""
+        password: "",
+        coins: 0,
+        firstName: ""
     };
 
     // handle any changes to the input fields
@@ -27,10 +29,13 @@ class Login extends Component {
         //todo return the json object of the learner - this is temporary
         axios({
             method:'get',
-            url:'http://localhost:3001/api/learners/email/' + this.state.email,
+            url:'/api/learners/email/' + this.state.email,
             responseType:'json'
           }).then(function(resp) {
                 console.log(resp);
+                // setState("coins", resp.data.coins);
+                alert(`Hi ${resp.data.firstName}! It's good to see you again!`);
+
           }).catch(function (err) {
               console.log(err);
           });
