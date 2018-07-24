@@ -1,26 +1,15 @@
-.form-horizontal { 
-    border: 2px solid #f1f1f1;
+.modal-container {
+    position: relative;
+  }
+
+.modal-container .modal, .modal-container .modal-backdrop {
+    position: absolute;
+  }
+
+.modal-title {
+    text-align: center;
 }
-
-.form-control {
-    width: 100%;
-    padding: 15px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-
-
-
-
 
 .btn {
-    color: black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+  border-radius: 12px;
 }
