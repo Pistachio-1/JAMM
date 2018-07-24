@@ -39,7 +39,7 @@ export default class Whitedog extends Component {
                     </div>
                 </div>
 
-            <div className="whiteball" tabindex="0"></div> 
+            <div className="whiteball" tabIndex="0"></div> 
         </div>
         )
     }

@@ -13,9 +13,9 @@ var linkStyle = {
     color: "#F1AA45"
 }
 
-{axios.get('/firstName=Allie')
+{axios.get('/ID=1')
 .then(function (response) {
-    console.log(response);
+    console.log(response.data);
 })
 .catch(function(error) {
     console.log(error);
