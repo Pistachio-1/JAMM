@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Navbar,Nav,NavItem } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './PetNavbar.css'
+import Login from '../Login'
 
 export default class PetNavbar extends Component {
     render() {
@@ -18,23 +19,20 @@ export default class PetNavbar extends Component {
                         <NavItem eventKey={1} componentClass={Link} href="/" to="/Home">
                         Home
                         </NavItem>
-                        <NavItem eventKey={2} componentClass={Link} href="/" to="/About">
-                        About
-                        </NavItem>
-                        <NavItem eventKey={3} componentClass={Link} href="/" to="/Additiongame">
+                        <NavItem eventKey={2} componentClass={Link} href="/" to="/Additiongame">
                         Game
                         </NavItem>
-                        <NavItem eventKey={4} componentClass={Link} href="/" to="/Doggy">
+                        <NavItem eventKey={3} componentClass={Link} href="/" to="/Doggy">
                         Doggy
                         </NavItem>
-                        <NavItem eventKey={5} componentClass={Link} href="/" to="/buypet">
+                        <NavItem eventKey={4} componentClass={Link} href="/" to="/buypet">
                         Buy Pets
                         </NavItem>
-                        <NavItem eventKey={6} componentClass={Link} href="/" to="/yourpets">
+                        <NavItem eventKey={5} componentClass={Link} href="/" to="/yourpets">
                         Your Pets
                         </NavItem>
-                        <NavItem eventKey={7} componentClass={Link} href="/" to="/Login">
-                        Login
+                        <NavItem>
+                        <Login/>
                         </NavItem>
                     </Nav>
                 </Navbar.Collapse>
