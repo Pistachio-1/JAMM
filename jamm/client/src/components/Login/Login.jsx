@@ -23,15 +23,16 @@ class Login extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        alert(`email: ${this.state.email}\nPassword: ${this.state.password}`);
-        //todo return the id of the username - this is temporary
+        // alert(`email: ${this.state.email}\nPassword: ${this.state.password}`);
+        //todo return the json object of the learner - this is temporary
         axios({
             method:'get',
             url:'http://localhost:3001/api/learners/email/' + this.state.email,
             responseType:'json'
-          })
-            .then(function(response) {
+          }).then(function(resp) {
                 console.log(resp);
+          }).catch(function (err) {
+              console.log(err);
           });
     };
 
