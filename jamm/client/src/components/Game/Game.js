@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from "lodash"
 import Number from "./Number"
+import Coins from "./viewCoins"
 import './game.css';
 import axios from "axios";
 
@@ -110,13 +111,14 @@ class Game extends Component {
       })
   }
 
+
   render() {
     const { gameStatus, remainingSeconds } = this.state;
     return (
       <div className="gamecontainer">
         <div className="gamename">
           <h3>Addition Game</h3>
-          <h4><i class="fas fa-coins"></i>  Coins: {this.getCoins}</h4>
+          <h4><i class="fas fa-coins"></i>  Coins: <Coins/></h4>
 
         </div>
         <div className="game">
