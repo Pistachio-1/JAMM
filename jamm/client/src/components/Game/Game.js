@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import _ from "lodash"
 import Number from "./Number"
 import './game.css';
-
-
-
+import axios from "axios";
 
 const randomNumberBetween = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
@@ -35,7 +33,6 @@ class Game extends Component {
   componentDidMount() {
     if (this.props.autoPlay) {
       this.startGame();
-      // this.addCoins();
     }
   }
 
@@ -56,14 +53,8 @@ class Game extends Component {
         });
       }, 1000);
     });
-    // this.round();
   };
-  // round = () => {
-  //   if ({ gameStatus: "won" }) {
-  //     this.setState({ counter: this.state.counter + 1 });
 
-  //   }
-  // }
   isNumberAvailable = (numberIndex) =>
     this.state.selectedIds.indexOf(numberIndex) === -1;
 
@@ -95,35 +86,29 @@ class Game extends Component {
     if (sumSelected < this.target) {
       return 'playing';
     }
-    return sumSelected === this.target ? 'won' : 'lost';
+    if(sumSelected === this.target){
+      this.addCoins()
+    }
+    return sumSelected === this.target ? 'won' : 'lost'
+  
   };
 
-  // addCoins = () => {
-  //   let coins = this.state.coins
-  //   if ({ gameStatus: "won" }) {
-  //     this.setState({ coins: this.state.coins + 20 })
-  //     app.put("/api/learners/update/", {
-  //       method: "PUT",
-  //       data: {
-  //         coins: this.state.coins + 20,
-  //         id: 1
-  //       },
-  //     }).then(function (res) {
-  //       if (res.status >= 400) {
-  //         throw new Error("Bad response from server");
-  //       }
-  //       return res.json();
-  //     }).then(function (data) {
-  //       console.log(data)
-  //       if (data == "success") {
-  //         console.log("SUCCESS")
-  //       }
-  //     }).catch(function (err) {
-  //       console.log(err)
-  //     });
-
-  //   }
-  // }
+  addCoins = () => {
+    axios.get("/api/learners/coins/")
+      .then(function (response) {
+        const plusCoins = response.data.coins + 50;
+        axios.put("/api/learners/update", { coins: plusCoins })
+          .then(function (res) {
+            if (res.status >= 400) {
+              throw new Error("Bad response from server");
+            }
+            console.log(res)
+            return
+          }).catch(function (err) {
+            console.log(err)
+          });
+      })
+  }
 
   render() {
     const { gameStatus, remainingSeconds } = this.state;
@@ -131,11 +116,10 @@ class Game extends Component {
       <div className="gamecontainer">
         <div className="gamename">
           <h3>Addition Game</h3>
-          <h4><i class="fas fa-coins"></i>  Coins: </h4>
+          <h4><i class="fas fa-coins"></i>  Coins: {this.getCoins}</h4>
 
         </div>
         <div className="game">
-          {/* <div className="counter">Round: {this.state.counter}</div> */}
           <div
             className="target"
             style={{ backgroundColor: Game.bgColors[gameStatus] }}
@@ -162,9 +146,6 @@ class Game extends Component {
             {['won', 'lost'].includes(gameStatus) && (
               <button className="gamebutton" onClick={this.props.onPlayAgain}>Play Again</button>
             )}
-            {/* {['won'].includes(gameStatus) && (
-              <button className="gamebutton" onClick={this.props.onNextRound}>Next Round</button>
-            )} */}
           </div>
         </div>
       </div>
