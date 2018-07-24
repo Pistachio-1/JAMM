@@ -1,7 +1,9 @@
 {
-  "name": "jamm",
-  "version": "0.1.0",
+  "name": "mern",
+  "version": "1.0.0",
   "private": true,
+  "description": "",
+  "main": "server.js",
   "dependencies": {
     "ajv": "^6.0.0",
     "ajv-keywords": "^3.2.0",
