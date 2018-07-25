@@ -34,6 +34,7 @@ class Game extends Component {
   componentDidMount() {
     if (this.props.autoPlay) {
       this.startGame();
+      this.viewCoins();
     }
   }
 
@@ -110,6 +111,10 @@ class Game extends Component {
           });
       })
   }
+  viewCoins = () => {
+    return sessionStorage.getItem("coins");
+ 
+   }
 
 
   render() {
@@ -118,7 +123,7 @@ class Game extends Component {
       <div className="gamecontainer">
         <div className="gamename">
           <h3>Addition Game</h3>
-          <h4><i class="fas fa-coins"></i>  Coins: <Coins/></h4>
+          <h4><i class="fas fa-coins"></i>  Coins: {this.viewCoins()}<Coins/></h4>
 
         </div>
         <div className="game">
