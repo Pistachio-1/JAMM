@@ -105,15 +105,15 @@ module.exports = function(app) {
     //     });
     // });
 
-    app.get("*", function(req, res) {
-        db.learner.findAll({})
-            .then(function(dbLearner) {
-                res.json(dbLearner);
-            })
-            .catch(function(err) {
-                console.log(err);
-                res.json(err);
-            });
-    });
+    // app.get("*", function(req, res) {
+    //     db.learner.findAll({})
+    //         .then(function(dbLearner) {
+    //             res.json(dbLearner);
+    //         })
+    //         .catch(function(err) {
+    //             console.log(err);
+    //             res.json(err);
+    //         });
+    // });
 
 }

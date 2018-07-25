@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const bodyParser = require("body-parser");
 const app = express();
 const PORT = 3001;
@@ -14,6 +15,10 @@ require("./routes/learner-routes")(app);
 // * leave in to verify express is working
 app.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 const db = require("./models");
