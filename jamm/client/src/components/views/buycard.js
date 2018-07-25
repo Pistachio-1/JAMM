@@ -3,6 +3,7 @@ import Buypetscard from "../Buypetscard";
 import Pets from "../../pets.json";
 import "./buycard.css";
 import axios from "axios";
+import Findcoins from "../Findcoins";
 
 var titleStyle = {
     color: "white",
@@ -13,14 +14,6 @@ var linkStyle = {
     color: "#F1AA45"
 }
 
-{axios.get('/ID=1')
-.then(function (response) {
-    console.log(response.data[0].coins);
-})
-.catch(function(error) {
-    console.log(error);
-})}
-
 
 const BuyPetsView = () => (
         <div>
@@ -29,7 +22,8 @@ const BuyPetsView = () => (
         </div>
         <div className="col-md-4"></div>
         <div className="col-md-4">
-        <h1 style={titleStyle}> Coins: 500</h1>
+        <h1 style={titleStyle}> Coins: 75 
+        </h1>
         <a style={linkStyle} href="/AdditionGame"> Make more coins!</a>
         </div>
         <div className="container scroll">

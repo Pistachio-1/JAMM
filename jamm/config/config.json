@@ -1,11 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "ASK4lyfe!",
-=======
-    "password": "m7i8k8e3",
->>>>>>> origin/master
     "database": "learner_db",
     "host": "localhost",
     "port": 3306,
