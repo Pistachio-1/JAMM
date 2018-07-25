@@ -34,12 +34,10 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build ",
-    "heroku-postbuild": "yarn build"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+    "heroku-postbuild": "yarn build",
     "concurrently": "^3.5.0",
     "nodemon": "^1.11.0"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }
