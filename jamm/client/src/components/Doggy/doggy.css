@@ -6,7 +6,7 @@
   z-index: 0; }
   .ball:after {
     content: '';
-    position: absolute;
+    position: relative;
     display: block;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@
     animation-timing-function: cubic-bezier(0, 0, 0, 1); } }
     .ball:focus:before {
       content: '';
-      position: absolute;
+      position: relative;
       display: block;
       top: 0;
       left: 0;
@@ -56,21 +56,21 @@
   .dog:before {
     content: '';
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.03);
     transform: translateY(-30%) scale(1.5); }
   .dog * {
-    position: absolute; }
+    position: relative; }
 
 .dog-body {
   top: -50%;
   animation: dog-body 200ms ease-in-out infinite alternate; }
   .dog-body:before {
     content: '';
-    position: absolute;
+    position: relative;
     bottom: 90%;
     right: 50%;
     width: 90%;
@@ -130,7 +130,7 @@
     height: 40px;
     width: 40px;
     border-radius: 40px;
-    position: absolute;
+    position: relative;
     background: orange;
     top: -10px;
     left: -10px;
@@ -172,7 +172,7 @@
   .dog-muzzle:before, .dog-muzzle:after {
     content: '';
     display: block;
-    position: absolute; }
+    position: relative; }
   .dog-muzzle:before {
     width: 6px;
     height: 20px;
@@ -209,7 +209,7 @@
     transform: rotate(-20deg); } }
   .dog-tongue:before {
     content: '';
-    position: absolute;
+    position: relative;
     display: block;
     width: 100%;
     height: 100%;
@@ -298,7 +298,7 @@
 .dog-head {
   border-radius: 50%;
   background: white;
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%; }
 

@@ -24,11 +24,13 @@
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
+    "express": "^4.16.3",
     "if-env": "^1.0.4",
+    "mysql2": "^1.5.3",
+    "node": "^10.7.0",
+    "path": "^0.12.7",
     "sequelize": "^4.38.0",
     "sequelize-cli": "^4.0.0",
-    "express": "^4.16.3",
-    "mysql2": "^1.5.3",
-    "path": "^0.12.7"
+    "yarn": "^1.7.0"
   }
 }

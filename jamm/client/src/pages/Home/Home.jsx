@@ -36,7 +36,9 @@ export default class Home extends Component {
                     <Grid>
                         <Row>
                             <Col md={7} className="missionText">
-                                <p>Welcome</p>
+                                <p>According to the international rankings of the OECD countries, 
+                                   the US education system is quite mediocre. In 2015, the US hit the international mean for reading and science literacy, 
+                                   however, in mathematics , the US was below average. </p>
                             </Col>
                             <Col md={5} className="missionPic">
                             <img className="gif" src={Gif}  alt="educationgif"/>
