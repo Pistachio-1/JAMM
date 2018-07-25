@@ -3,7 +3,8 @@ import './App.css';
 import {BrowserRouter as Router, Route } from 'react-router-dom';
 import Doggy from './components/Doggy';
 import Navbar from './components/Navbar';
-import Login from "./components/Login"
+import Login from "./components/Login";
+import Footer from "./components/Footer";
 import About from './pages/About';
 import AdditionGame from "./pages/AdditionGame"
 import BuyPetsView from "./components/views/buycard"
@@ -26,6 +27,7 @@ class App extends Component {
         <Route path="/doggy" component={Doggy} />
         <Route path="/home"  component={Home} />
         <Route path="/yourpets"  component={YourPetsView} />
+        <Footer />
       </div> 
     </Router>
     );
