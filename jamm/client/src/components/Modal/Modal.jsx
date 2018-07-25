@@ -19,6 +19,7 @@ class Modal extends Component {
     this.setState({
       [name]: value
     });
+    sessionStorage.setItem(name, value);
   };
 
   handleFormSubmit = event => {
@@ -35,7 +36,9 @@ class Modal extends Component {
         if (resp.data.password === self.state.password) {
           console.log(resp.data);
           self.setState({ "coins": resp.data.coins });
+          sessionStorage.setItem("coins", resp.data.coins);
           self.setState({ "firstName": resp.data.firstName });
+          sessionStorage.setItem("firstName", resp.data.firstName);
           alert(`Hi ${resp.data.firstName}! It's good to see you again!`);
         } else {
           alert(`I'm sorry, I can't find ${email}. Please check the email and password or go to Home and set up a new account`);
