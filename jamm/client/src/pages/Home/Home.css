@@ -1,31 +1,34 @@
 .content {
-    background-color: #63D2FF;
+    background-color: #82DBFF;
     padding: 15px;
+    padding-bottom: 30px;
 }
 .mission {
-    background-color: #ffffff;
-    padding: 15px;
+    background-color: #EFF1ED;
+    padding: 30px;
+}
+.missionText{
+    margin-left: 10vh;
+}
+h3 {
+    margin: 5vh;
+    color: white;
+}
+.missionText > p{
+    line-height: 30px;
+    text-align: left;
+}
+.missionPic { 
+  float: right;
 }
 .gif {
-    width: 400px;
-    height: 400px;
+    width: 280px;
+    height: 280px;
     border-radius: 100%;
 
 }
-.gamesection{
-    background-color: #F4AFB4;
-    font-family: 'Arvo', serif;
-    padding: 30px;;
-}
-/* .gamesection > h2 {
-    margin: 20px;
-} */
-.addgame{
-    flex: wrap;
-    margin-left: 10vh;
-    margin-bottom: 15px;
 
-}
+
 img {
     margin-bottom: 15px;
     padding: 10px;

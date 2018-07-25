@@ -68,6 +68,15 @@ module.exports = function(app) {
                 console.log(err);
                 res.json(err);
             });
+    }); 
+    app.get("/api/learners/coins", function(req, res) {
+        db.learner.findOne({
+            where: {
+                id:1
+            }
+        }).then(function(dbLearner) {
+            res.json(dbLearner)
+        });
     });
 
     app.post("/api/learners/create", function(req, res) {
@@ -80,7 +89,7 @@ module.exports = function(app) {
     app.put("/api/learners/update", function(req, res) {
         db.learner.update(req.body, {
             where: {
-                id: req.body.id
+                id: 1
             }
         }).then(function(dbLearner) {
             res.json(dbLearner);
