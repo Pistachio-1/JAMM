@@ -1,0 +1,43 @@
+footer{
+background-color: #ffffff;
+padding: 5px;
+margin-top: 10vh;
+}
+.brand{
+    color:#82DBFF;
+    font-family: 'Acme', sans-serif;
+    font-size: 50px;
+    margin-left: 5vh;
+}
+.follow{
+    text-align: center;
+}
+.fab {
+    padding: 8px;
+}
+.socialmedia{
+    margin-left: 30px;
+    color: #82DBFF;
+}
+.section{ 
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+}
+.aboutsection {
+    padding: 20px;
+    margin-top: 10px;
+    color: #82DBFF;
+}
+
+.about {
+    margin-top: 10px;
+}
+
+.title {
+    text-align: left;
+    color: #82DBFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #82DBFF;
+}
