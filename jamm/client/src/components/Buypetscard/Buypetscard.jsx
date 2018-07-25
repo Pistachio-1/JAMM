@@ -7,7 +7,7 @@ import './Buypetscard.css';
 export default class Buypetscard extends Component {
   render() {
     function handleClick(e) {
-      var userCoins = 700;
+      var userCoins = 75;
       var cost = e.target.value;
       if (userCoins >= cost) {
         alert("yay you bought a new pet!")
