@@ -14,7 +14,7 @@ const Learner = (sequelize, DataTypes) => {
         email:     {type: Sequelize.STRING, allowNull: false},
         password:  {type: Sequelize.STRING, allowNull: false},
         coins:     {type: Sequelize.INTEGER, defaultValue: 20},
-        favoritePet: {type: Sequelize.STRING, allowNull: false},
+        favoritePet: {type: Sequelize.STRING, allowNull: true},
         createdAt: {type: Sequelize.DATE, defaultValue: Sequelize.NOW},
         updatedAt: {type: Sequelize.DATE, defaultValue: Sequelize.NOW}
     });
