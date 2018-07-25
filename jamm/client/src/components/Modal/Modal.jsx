@@ -34,7 +34,7 @@ class Modal extends Component {
     }).then(function (resp) {
       if (resp.data != null) {
         if (resp.data.password === self.state.password) {
-          console.log(resp.data);
+          // console.log(resp.data);
           self.setState({ "coins": resp.data.coins });
           sessionStorage.setItem("coins", resp.data.coins);
           self.setState({ "firstName": resp.data.firstName });
