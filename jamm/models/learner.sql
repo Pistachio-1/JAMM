@@ -1,0 +1,14 @@
+CREATE DATABASE learner_db;
+USE learner_db;
+
+CREATE TABLE learners(
+  id INTEGER(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  
+  firstName VARCHAR(50) NOT NULL,
+  lastName  VARCHAR(50) NOT NULL,
+  userName VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  password VARCHAR(50) NOT NULL,
+  coins INTEGER(11) DEFAULT 20,
+  favoritePet VARCHAR(50)   
+);

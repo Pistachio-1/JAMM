@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import _ from "lodash"
 import Number from "./Number"
-import Coins from "./viewCoins"
 import './game.css';
 import axios from "axios";
 
@@ -34,6 +33,7 @@ class Game extends Component {
   componentDidMount() {
     if (this.props.autoPlay) {
       this.startGame();
+      this.viewCoins();
     }
   }
 
@@ -98,6 +98,7 @@ class Game extends Component {
     axios.get("/api/learners/coins/")
       .then(function (response) {
         const plusCoins = response.data.coins + 50;
+        console.log(plusCoins)
         axios.put("/api/learners/update", { coins: plusCoins })
           .then(function (res) {
             if (res.status >= 400) {
@@ -111,6 +112,10 @@ class Game extends Component {
       })
   }
 
+  viewCoins = () => {
+   return sessionStorage.getItem("coins");
+
+  }
 
   render() {
     const { gameStatus, remainingSeconds } = this.state;
@@ -118,7 +123,7 @@ class Game extends Component {
       <div className="gamecontainer">
         <div className="gamename">
           <h3>Addition Game</h3>
-          <h4><i class="fas fa-coins"></i>  Coins: <Coins/></h4>
+          <h4><i className="fas fa-coins"></i>  Coins: {this.viewCoins()} </h4>
 
         </div>
         <div className="game">
