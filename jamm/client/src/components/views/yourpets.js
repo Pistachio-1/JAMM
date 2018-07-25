@@ -19,7 +19,7 @@ const YourPetsView = () => (
     </div>
     <div className="col-md-4"></div>
     <div className="col-md-4">
-    <h1 style={titleStyle}> Pets Owned: </h1>
+    <h1 style={titleStyle}> Pets Owned: 2</h1>
     <a style={linkStyle} href="/buypet"> Buy More Pets!</a>
     </div>
     <div className="container scroll">
