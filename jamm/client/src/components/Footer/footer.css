@@ -17,7 +17,7 @@ margin-top: 10vh;
 }
 .socialmedia{
     margin-left: 30px;
-    color: #82DBFF;
+    color: #1D4569;
 }
 .section{ 
     text-align: left;
@@ -27,17 +27,10 @@ margin-top: 10vh;
 .aboutsection {
     padding: 20px;
     margin-top: 10px;
-    color: #82DBFF;
+    color: #1D4569;
 }
 
 .about {
     margin-top: 10px;
 }
 
-.title {
-    text-align: left;
-    color: #82DBFF;
-    font-size: 16px;
-    font-weight: bold;
-    border-bottom: 1px solid #82DBFF;
-}
