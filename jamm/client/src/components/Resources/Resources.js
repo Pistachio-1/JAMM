@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Carousel } from "react-bootstrap"
 import { Grid, Row, Col } from 'react-bootstrap';
 import "./Resources.css"
-import AdditionGame from "../../pages/AdditionGame";
 import Bbc from "../images/bbc.png"
 import Discovery from "../images/discovery.png"
 import Funbrain from "../images/funbrain.png"
@@ -67,7 +66,7 @@ export default class Resources extends Component {
                             <h2> Games: </h2>
                             <Carousel>
                                 <Carousel.Item>
-                                    <a href={AdditionGame}> <img alt="500x350" src={GamePic} /> </a>
+                                    <a href="/additiongame"> <img alt="500x350" src={GamePic} /> </a>
                                     <Carousel.Caption>
                                         <h3>Addition Game</h3>
                                     </Carousel.Caption>
