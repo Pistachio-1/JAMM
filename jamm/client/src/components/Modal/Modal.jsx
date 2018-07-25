@@ -39,6 +39,9 @@ class Modal extends Component {
           sessionStorage.setItem("coins", resp.data.coins);
           self.setState({ "firstName": resp.data.firstName });
           sessionStorage.setItem("firstName", resp.data.firstName);
+          sessionStorage.setItem("lastName", resp.data.lastName);
+          sessionStorage.setItem("userName", resp.data.userName);
+          sessionStorage.setItem("favoritePet", resp.data.favoritePet);
           alert(`Hi ${resp.data.firstName}! It's good to see you again!`);
         } else {
           alert(`I'm sorry, I can't find ${email}. Please check the email and password or go to Home and set up a new account`);
