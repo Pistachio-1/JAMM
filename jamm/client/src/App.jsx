@@ -10,7 +10,6 @@ import BuyPetsView from "./components/views/buycard"
 import Home from "./pages/Home"
 import YourPetsView from "./components/views/yourpets"
 
-
 class App extends Component {
   render() {
     return (
