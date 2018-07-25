@@ -32,6 +32,10 @@ export default class Buypetscard extends Component {
               <li>
                 <strong>Description:</strong> {this.props.data.description}
               </li>
+              <li>
+                <strong>How to take care of: </strong><a href = {this.props.data.link}> {(this.props.data.label)}</a>
+              </li>
+  
               <button type="button" className="btn btn-warning buyButton" value={this.props.data.worth} onClick={handleClick}>Buy Pet for {this.props.data.worth} coins</button>
 
             </ul>

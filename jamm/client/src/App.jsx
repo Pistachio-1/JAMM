@@ -10,7 +10,7 @@ import AdditionGame from "./pages/AdditionGame"
 import BuyPetsView from "./components/views/buycard"
 import Home from "./pages/Home"
 import YourPetsView from "./components/views/yourpets"
-import profile from './components/UserProfile/profile';
+
 
 class App extends Component {
   render() {
@@ -23,7 +23,6 @@ class App extends Component {
         <Route path="/additiongame" component={AdditionGame} />
         <Route path="/buypet" component={BuyPetsView} />
         <Route path="/login" component={Login} />
-        <Route path="/profile" component={profile} />
         <Route path="/doggy" component={Doggy} />
         <Route path="/home"  component={Home} />
         <Route path="/yourpets"  component={YourPetsView} />
