@@ -10,6 +10,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // * parse application/json
 app.use(bodyParser.json());
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 require("./routes/learner-routes")(app);
 
 // * leave in to verify express is working
