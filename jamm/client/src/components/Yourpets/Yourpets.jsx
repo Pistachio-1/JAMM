@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import './Yourpets.css';
+import Doggy from "../Doggy";
+
 
 export default class Yourpets extends Component {
     render() {
@@ -22,12 +24,10 @@ export default class Yourpets extends Component {
                   </li>
                   <button type="button" className="btn btn-warning buyButton">Feed</button>
                   <button type="button" className="btn btn-warning buyButton">Play With</button>
-    
                 </ul>
               </div>
             </div>
           </div>
-
         )
     }
 }

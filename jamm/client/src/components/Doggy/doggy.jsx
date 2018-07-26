@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Grid,Row,Col} from 'react-bootstrap';
 import './doggy.scss'
 
 export default class Doggy extends Component {
