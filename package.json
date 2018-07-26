@@ -1,0 +1,15 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "cd jamm; yarn start",
+    "install": "cd jamm; yarn",
+    "build": "cd jamm; yarn build ",
+    "heroku-postbuild": "cd jamm; yarn heroku-postbuild"
+  },
+  "author": "",
+  "license": "ISC"
+}
