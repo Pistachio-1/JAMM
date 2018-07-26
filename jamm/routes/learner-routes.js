@@ -1,4 +1,4 @@
-const Op = require("Sequelize").Op;
+const Op = require("sequelize").Op;
 const db = require("../models");
 
 module.exports = function(app) {    
@@ -105,15 +105,15 @@ module.exports = function(app) {
     //     });
     // });
 
-    app.get("*", function(req, res) {
-        db.learner.findAll({})
-            .then(function(dbLearner) {
-                res.json(dbLearner);
-            })
-            .catch(function(err) {
-                console.log(err);
-                res.json(err);
-            });
-    });
+    // app.get("*", function(req, res) {
+    //     db.learner.findAll({})
+    //         .then(function(dbLearner) {
+    //             res.json(dbLearner);
+    //         })
+    //         .catch(function(err) {
+    //             console.log(err);
+    //             res.json(err);
+    //         });
+    // });
 
 }

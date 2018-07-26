@@ -7,5 +7,14 @@
         "description": "This dog will follow you until you love it.",
         "hungerlevel" : 6,
         "playfulness" : 6
+    },
+    {
+        "id": 2, 
+        "name": "George",
+        "type": "monkey",
+        "image":"https://image.ibb.co/fkmkjJ/monkey.png",
+        "description": "This funky monkey loves to play and loves to eat.",
+        "hungerlevel" : 4,
+        "playfulness" : 10
     }
 ]

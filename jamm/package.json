@@ -25,7 +25,7 @@
     "sequelize-cli": "^4.0.0"
   },
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "npm run start:prod",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "build-css": "node-sass-chokidar src/ -o src/",
@@ -34,12 +34,10 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build ",
-    "heroku-postbuild": "npm run build"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+    "heroku-postbuild": "yarn build",
     "concurrently": "^3.5.0",
     "nodemon": "^1.11.0"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }

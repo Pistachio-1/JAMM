@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import _ from "lodash"
 import Number from "./Number"
-import Coins from "./viewCoins"
 import './game.css';
 import axios from "axios";
 
@@ -35,6 +34,7 @@ class Game extends Component {
     if (this.props.autoPlay) {
       this.startGame();
     }
+    this.viewCoins();
   }
 
   componentWillUnmount() {
@@ -87,28 +87,37 @@ class Game extends Component {
     if (sumSelected < this.target) {
       return 'playing';
     }
-    if(sumSelected === this.target){
+    if (sumSelected === this.target) {
       this.addCoins()
     }
     return sumSelected === this.target ? 'won' : 'lost'
-  
+
   };
 
   addCoins = () => {
     axios.get("/api/learners/coins/")
       .then(function (response) {
         const plusCoins = response.data.coins + 50;
+        // console.log(plusCoins)
         axios.put("/api/learners/update", { coins: plusCoins })
           .then(function (res) {
             if (res.status >= 400) {
               throw new Error("Bad response from server");
             }
-            console.log(res)
             return
           }).catch(function (err) {
             console.log(err)
           });
-      })
+        })
+  }
+
+  viewCoins = () => {
+    axios.get("/api/learners/coins")
+    .then(function(response){
+      sessionStorage.setItem("coins", response.data.coins)
+      return sessionStorage.getItem("coins")
+    })
+
   }
 
 
@@ -118,7 +127,7 @@ class Game extends Component {
       <div className="gamecontainer">
         <div className="gamename">
           <h3>Addition Game</h3>
-          <h4><i class="fas fa-coins"></i>  Coins: <Coins/></h4>
+          <h4><i className="fas fa-coins"></i>  Coins: {sessionStorage.getItem("coins")} </h4>
 
         </div>
         <div className="game">
